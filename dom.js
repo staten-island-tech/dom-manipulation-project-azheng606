@@ -1,13 +1,4 @@
-/*  const form = document.querySelector("#form"); 
-console.log;
-//
-const DOMSelectors = {
-    form: document.querySelector("#form")
-    //select the textbox
-    //Select all the h2s in one property 
-};
-DOMSelectors.form
-// */
+
 const DOMSelectors = {
     form: document.querySelector("#form"),
     firstName:document.querySelector(".first-name"),
