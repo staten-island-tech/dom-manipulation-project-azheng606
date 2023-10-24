@@ -18,3 +18,10 @@ DOMSelectors.form.addEventListener("submit", function(event) {
 DOMSelectors.button.addEventListener("click", function(){
 box(DOMSelectors.box, DOMSelectors.text);
 });
+
+
+//const Album = make Album 
+// addcard (Album)
+//clearFields ()
+//addRemoveButtons
+//insertAdjacent html 

@@ -1,0 +1,11 @@
+.card {
+    height: 38%;
+    width: 20%;
+    background-color: rgb(188, 207, 214);
+    align-items: center;
+    border-radius: 5%;
+    box-shadow: 10px 5px 5px rgb(70, 72, 73);
+    transition: all 0.7s;
+    margin: 15px 1px;
+    
+}
