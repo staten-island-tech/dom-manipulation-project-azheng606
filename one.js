@@ -1,5 +1,5 @@
 
-/* const DOMSelectors = {
+ const DOMSelectors = {
     form: document.querySelector("#form"),
     firstName:document.querySelector(".first-name"),
     h2s:document.querySelectorAll("h2"),
@@ -7,19 +7,26 @@
     //select ALL the h2s in one property 
 }
 
-DOMSelectors.form.addEventListener("submit", function(event) {
-    event.preventDefault();
-    console.log(DOMSelectors.firstName.value);
+/* DOMSelectors.form.addEventListener("submit", function(event) { */
+    /* event.preventDefault(); */
+   /*  console.log(DOMSelectors.firstName.value);
     DOMSelectors.h2s.forEach((el)=> el.textContent= DOMSelectors.firstName.value);
-}
 
-);
+DOMSelectors.box.insertAdjacentHTML("afterend", `<p>${input}</p>`); //this part on actual page
+DOMSelectors.input.value = "" */ //erases what you wrote in the button after submitting it
 
+DOMSelectors.form.addEventListener("submit" ,function (event) { 
+    let input = DOMSelectors.input.value //get value of whatevr user typed into input which should be our text (this part in console)
+    /* console.log (input); */
+    event.preventDefault();
+    DOMSelectors.box.insertAdjacentHTML("afterend", `<p>${input}</p>`); //this part on actual page
+    /* DOMSelectors.input.value = "" */ //erases what you wrote in the button after submitting it
+})
+/* 
 DOMSelectors.button.addEventListener("click", function(){
 box(DOMSelectors.box, DOMSelectors.text);
 });
  */
-
 //const Album = make Album 
 // addcard (Album)
 //clearFields ()
@@ -33,6 +40,7 @@ const button = document.getElementById ("btn"); //shows first element within tha
 const text = document.querySelector("#text"); //shows first element within the id "text" usually use for classes 
 console.log (text);  */
 //these names "button" "text" are too general 
+/* 
 
 const DOMSelectors = {
     //curly brackets is object 
@@ -74,10 +82,10 @@ function changeLi () {
 };
 changeLi();
 
-//video #5 (adjacent)//
   
 
 
 
  
 
+ */
