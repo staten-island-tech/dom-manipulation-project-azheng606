@@ -1,27 +1,13 @@
 
-body, 
-html, 
-*{
-    font-size: 20px;
-    box-sizing: border-box;
-    padding: 0;
-    font-family: 'Kalam', cursive;
-    align-items: center;
-    background-color: aliceblue;
-    margin: 10px;
-    
-}
 
 .card {
-    height: 38%;
+    height: 50%;
     width: 20%;
     background-color: rgb(188, 207, 214);
     align-items: center;
     border-radius: 5%;
     box-shadow: 10px 5px 5px rgb(70, 72, 73);
-    transition: all 0.7s;
     margin: 15px 1px;
-    opacity: .75;
 }
 
 
@@ -34,12 +20,12 @@ html,
 }
 .card-title {
     font: 2.2rem;
-    margin-top: 20px 80px;
+    margin-top: 2px 80px;
     text-align: center;
     
 }
 
-.box {
+ .box {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -50,7 +36,7 @@ html,
    
  .card-img {
         width: 90%;
-        height: 22vh; 
+        height: 30%; 
         align-items: center;
         margin-left: 5%;
     }
