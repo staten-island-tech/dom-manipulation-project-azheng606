@@ -1,4 +1,4 @@
-.card {
+/* .card {
     height: 38%;
     width: 20%;
     background-color: rgb(188, 207, 214);
@@ -8,4 +8,15 @@
     transition: all 0.7s;
     margin: 15px 1px;
     
+} */
+
+#container-box { 
+    background-color: black;
+    font-size: 2 vh;
+    color: cornsilk;
+    text-align: center;
+}
+
+.cat-poster { 
+    width: 10rem; 
 }
