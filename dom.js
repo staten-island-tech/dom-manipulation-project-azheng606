@@ -6,7 +6,8 @@ const DOMSelectors = {
     gone: document.querySelector("#gone"),
     name:document.querySelector(".name"),
     title:document.querySelector(".title"),
-image:document.querySelector(".image")}
+image:document.querySelector(".image")
+}
 
     DOMSelectors.form.addEventListener("submit" ,function (event) { 
         event.preventDefault();
@@ -18,7 +19,9 @@ image:document.querySelector(".image")}
         <div class ="h1"> ${DOMSelectors.name.value}</div>
             <h3 class="card-title"> ${DOMSelectors.title.value}</h3>
             <img src= ${DOMSelectors.image.value} class="card-img">
-        </div>`)}
+            <button class="remove" type="button">Remove</button>
+        </div>`
+        )}
         poker ()
         clearfields ()
         
@@ -29,5 +32,9 @@ image:document.querySelector(".image")}
         DOMSelectors.title.value = "" 
         DOMSelectors.image.value = "" 
         }
+
+       
+
+      
        
 
