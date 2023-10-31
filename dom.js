@@ -18,14 +18,14 @@ image:document.querySelector(".image")}
         <div class ="h1"> ${DOMSelectors.name.value}</div>
             <h3 class="card-title"> ${DOMSelectors.title.value}</h3>
             <img src= ${DOMSelectors.image.value} class="card-img">
-            <button class="remove" type ="button">Remove</button>
+            <button class="removeButton" type ="button">Remove</button>
           </div>
           
         `)}
         
         poker ()
         clearfields ()
-        remove ()
+        gone ()
         });
 
 
@@ -35,25 +35,11 @@ image:document.querySelector(".image")}
         DOMSelectors.image.value = "" 
         }
 
-    
         
-        function remove () {
-            document.querySelectorAll(".remove");
-            remove.forEach((button) => 
-            button.addEventListener ("click", function (event){
-                console.log (event.target.parentElement.parentElement);
-            }) )
-            };
-
-            DOMSelectors.removeButton = document.querySelectorAll ('.remove')
-            inject (album);
-            clear();
-            removeEvemntlistener (DOMSelectors.display);
-
-
-           
-            
-   
-        
+        function gone () {
+            const button = document.querySelectorAll(".removeButton");
+            button.forEach((button) => 
+            button.addEventListener ("click", function (button){
+                button.target.parentElement.remove()}))};
        
 
