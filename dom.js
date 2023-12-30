@@ -18,10 +18,14 @@ image:document.querySelector(".image")}
         <div class ="h1"> ${DOMSelectors.name.value}</div>
             <h3 class="card-title"> ${DOMSelectors.title.value}</h3>
             <img src= ${DOMSelectors.image.value} class="card-img">
-        </div>`)}
+            <button class="removeButton" type ="button">Remove</button>
+          </div>
+          
+        `)}
+        
         poker ()
         clearfields ()
-        
+        gone ()
         });
 
 
@@ -30,5 +34,12 @@ image:document.querySelector(".image")}
         DOMSelectors.title.value = "" 
         DOMSelectors.image.value = "" 
         }
+
+        
+        function gone () {
+            const button = document.querySelectorAll(".removeButton");
+            button.forEach((button) => 
+            button.addEventListener ("click", function (button){
+                button.target.parentElement.remove()}))};
        
 
